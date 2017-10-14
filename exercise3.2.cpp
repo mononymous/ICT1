@@ -7,12 +7,9 @@ int main()
     int ix, ia, ib, nfactor;
     float fa1, fb1, fa2, fb2, fa3, fb3;
 
-//  nfactor=10;
-//  srand((unsigned) time(NULL));    /* seeds of randam number */
-//  ix = rand()%nfactor;         /* random number between 0 and 9. */
-    
-//  Debug ix number
-    ix = 5;
+    nfactor=10;
+    srand((unsigned) time(NULL));    /* seeds of randam number */
+    ix = rand()%nfactor;         /* random number between 0 and 9. */
     
     fprintf(stdout, "The selected number is %d ;.\n", ix);
     
@@ -41,8 +38,7 @@ int main()
         fb3 = fb2;
     }
     
-    fprintf(stdout, "The difference is %f and %f ;.\n", fa2, fb2);
-    fprintf(stdout, "The absolute difference is %f and %f ;.\n", fa3, fb3);
+//  Winner statement    
     
     if (fa3 < fb3) {
         fprintf(stdout, "Player one is the winner!\n");
